@@ -63,13 +63,9 @@ if st.session_state.dark_mode:
         }
         </style>
     """, unsafe_allow_html=True)
-import streamlit as st
 import pandas as pd
 
-# SRM logo and heading
-st.image("srm_logo.png", use_container_width=True)
-
-st.title("🧪 ChemInformatics Virtual Laboratory")
+st.title("🧪 Virtual Molecular Lab")
 st.subheader("Molecular Properties")
 
 st.write(
@@ -77,32 +73,26 @@ st.write(
     "hydrogen-bond donors, and acceptors."
 )
 
-# Sample data for the molecular chart
+# Sample Data for the Molecular Chart
 data = {
-    "Molecule": [
-        "Water", "Ethanol", "Glucose", "Aspirin", "Caffeine"
-    ],
-    "Formula": [
-        "H2O", "C2H5OH", "C6H12O6", "C9H8O4", "C8H10N4O2"
-    ],
-    "Molecular Weight (g/mol)": [
-        18.015, 46.07, 180.16, 180.16, 194.19
-    ]
+    "Molecule": ["Water", "Ethanol", "Glucose", "Aspirin", "Caffeine"],
+    "Formula": ["H2O", "C2H5OH", "C6H12O6", "C9H8O4", "C8H10N4O2"],
+    "Molecular Weight (g/mol)": [18.015, 46.07, 180.16, 180.16, 194.19]
 }
 
 # Create DataFrame
 df = pd.DataFrame(data)
 
-# Display molecular properties table
-st.subheader("Molecular Properties Table")
+# Display data table
 st.dataframe(df, use_container_width=True)
 
-# Display molecular weight chart
-st.subheader("Molecular Weight Comparison")
+# Generate bar chart
 st.bar_chart(
-    df.set_index("Molecule")["Molecular Weight (g/mol)"]
+    df.set_index("Molecule"),
+    y="Molecular Weight (g/mol)"
 )
 
+st.caption("Molecular weights are approximate values in g/mol.")
 # ============================================================
 # PAGE CONFIGURATION
 # ============================================================
