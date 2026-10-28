@@ -1809,7 +1809,7 @@ if page == "🏠 Home":
     st.markdown("Student of Engineering and Technology  ")
     st.markdown("SRM Institute of Science and Technology, Tiruchirappalli")
 
-    st.info("📧 **For queries, contact:** rsmani84@gmail.com")
+    st.info("📧 **For queries, contact:** ka16ma05li03ka12@gmail.com")
 
 
 # ============================================================
