@@ -63,7 +63,7 @@ if st.session_state.dark_mode:
         }
         </style>
     """, unsafe_allow_html=True)
-    import streamlit as st
+import streamlit as st
 import pandas as pd
 
 # SRM logo and heading
