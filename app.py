@@ -1730,7 +1730,7 @@ if page == "🏠 Home":
 
     st.divider()
 
-    st.markdown("## Welcome to the Virtual Laboratory")
+    st.markdown("## Welcome to the MolVerse")
 
     st.write("""
     This interactive virtual laboratory helps students understand
