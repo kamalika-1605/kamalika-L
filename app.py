@@ -731,8 +731,8 @@ def generate_molecule_pdf(
     were calculated from the chemical structure represented by
     the submitted SMILES notation using the RDKit cheminformatics
     toolkit.
-    """
-
+    """ 
+    
     story.append(
         Paragraph(
             interpretation,
