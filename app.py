@@ -139,25 +139,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Application content
-st.title("🧪 Virtual Molecular Lab")
-st.subheader("Molecular Properties")
 
-st.write(
-    "Compare molecular formulas, molecular weights, "
-    "hydrogen-bond donors, and acceptors."
-)
-
-molecule_name = st.text_input("Enter molecule name")
-molecular_weight = st.number_input(
-    "Enter molecular weight",
-    min_value=0.0,
-    step=0.1
-)
-
-if st.button("Submit"):
-    st.write("Molecule:", molecule_name)
-    st.write("Molecular Weight:", molecular_weight)
 import pandas as pd
 
 st.title("🧪 Virtual Molecular Lab")
