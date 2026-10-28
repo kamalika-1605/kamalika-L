@@ -727,7 +727,7 @@ def generate_molecule_pdf(
 
     interpretation = """
     This report was generated automatically using the
-    Cheminformatics Virtual Laboratory. The molecular properties
+    MolVerse. The molecular properties
     were calculated from the chemical structure represented by
     the submitted SMILES notation using the RDKit cheminformatics
     toolkit.
@@ -1712,7 +1712,7 @@ if page == "🏠 Home":
             st.image(logo_path, use_container_width=True)
 
     st.markdown(
-        '<div class="main-title">🧪 Cheminformatics Virtual Laboratory</div>',
+        '<div class="main-title">🧪 MolVerse</div>',
         unsafe_allow_html=True
     )
 
