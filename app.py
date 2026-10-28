@@ -175,7 +175,7 @@ st.caption("Molecular weights are approximate values in g/mol.")
 # ============================================================
 
 st.set_page_config(
-    page_title="Cheminformatics Virtual Laboratory",
+    page_title="MolVerse",
     page_icon="🧪",
     layout="wide"
 )
