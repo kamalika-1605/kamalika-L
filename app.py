@@ -1134,7 +1134,7 @@ def generate_final_report(student_name, registration_number, input_smiles, mol, 
 
     story += [
         Spacer(1, 0.25 * inch),
-        Paragraph("CHEMINFORMATICS VIRTUAL LABORATORY", title_style),
+        Paragraph("MolVerse", title_style),
         Spacer(1, 0.12 * inch),
         Paragraph("FINAL STUDENT MOLECULAR ANALYSIS REPORT", heading_style),
         Spacer(1, 0.18 * inch)
@@ -2636,6 +2636,6 @@ elif page == "📄 Final Project Report":
 st.divider()
 
 st.caption(
-    "🧪 Cheminformatics Virtual Laboratory | "
+    "🧪 MolVerse | "
     "Developed using Python, Streamlit and RDKit"
 )
