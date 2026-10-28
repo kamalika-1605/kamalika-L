@@ -142,7 +142,7 @@ st.markdown(
 
 import pandas as pd
 
-st.title("🧪 Virtual Molecular Lab")
+st.title("🧪 MolVerse")
 st.subheader("Molecular Properties")
 
 st.write(
