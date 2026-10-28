@@ -140,36 +140,7 @@ st.markdown(
 )
 
 
-import pandas as pd
 
-st.title("🧪 MolVerse")
-st.subheader("Molecular Properties")
-
-st.write(
-    "Compare molecular formulas, molecular weights, "
-    "hydrogen-bond donors, and acceptors."
-)
-
-# Sample Data for the Molecular Chart
-data = {
-    "Molecule": ["Water", "Ethanol", "Glucose", "Aspirin", "Caffeine"],
-    "Formula": ["H2O", "C2H5OH", "C6H12O6", "C9H8O4", "C8H10N4O2"],
-    "Molecular Weight (g/mol)": [18.015, 46.07, 180.16, 180.16, 194.19]
-}
-
-# Create DataFrame
-df = pd.DataFrame(data)
-
-# Display data table
-st.dataframe(df, use_container_width=True)
-
-# Generate bar chart
-st.bar_chart(
-    df.set_index("Molecule"),
-    y="Molecular Weight (g/mol)"
-)
-
-st.caption("Molecular weights are approximate values in g/mol.")
 # ============================================================
 # PAGE CONFIGURATION
 # ============================================================
@@ -206,7 +177,36 @@ st.markdown("""
 # ============================================================
 # HELPER FUNCTIONS
 # ============================================================
+import pandas as pd
 
+
+st.subheader("Molecular Properties")
+
+st.write(
+    "Compare molecular formulas, molecular weights, "
+    "hydrogen-bond donors, and acceptors."
+)
+
+# Sample Data for the Molecular Chart
+data = {
+    "Molecule": ["Water", "Ethanol", "Glucose", "Aspirin", "Caffeine"],
+    "Formula": ["H2O", "C2H5OH", "C6H12O6", "C9H8O4", "C8H10N4O2"],
+    "Molecular Weight (g/mol)": [18.015, 46.07, 180.16, 180.16, 194.19]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Display data table
+st.dataframe(df, use_container_width=True)
+
+# Generate bar chart
+st.bar_chart(
+    df.set_index("Molecule"),
+    y="Molecular Weight (g/mol)"
+)
+
+st.caption("Molecular weights are approximate values in g/mol.")
 # ============================================================
 # SHARED MOLECULE INPUT STATE
 # ============================================================
