@@ -1486,7 +1486,7 @@ def generate_multi_final_report(student_name, registration_number, molecule_reco
     )
     story = [
         Spacer(1, 0.15 * inch),
-        Paragraph("CHEMINFORMATICS VIRTUAL LABORATORY", title_style),
+        Paragraph("MolVerse", title_style),
         Spacer(1, 0.08 * inch),
         Paragraph("MULTI-MOLECULE STUDENT ANALYSIS REPORT", heading_style),
         Paragraph(
