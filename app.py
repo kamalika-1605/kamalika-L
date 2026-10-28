@@ -1729,10 +1729,10 @@ if page == "🏠 Home":
     st.divider()
 
     st.markdown("### 👨‍🏫 Developed by")
-    st.markdown("**Dr. R. Subramanian**")
-    st.markdown("Assistant Professor  ")
-    st.markdown("Division of Chemistry, School of Sciences  ")
-    st.markdown("Faculty of Engineering and Technology  ")
+    st.markdown("**Kamalika L**")
+    st.markdown("Student  ")
+    st.markdown("Division of Cybersecurity, School of ComputerScience  ")
+    st.markdown("Student of Engineering and Technology  ")
     st.markdown("SRM Institute of Science and Technology, Tiruchirappalli")
 
     st.info("📧 **For queries, contact:** rsmani84@gmail.com")
