@@ -41,7 +41,7 @@ import os
 import streamlit as st
 
 st.set_page_config(
-    page_title="Virtual Molecular Lab",
+    page_title="MolVerse",
     page_icon="🧪",
     layout="wide"
 )
