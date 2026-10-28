@@ -1693,6 +1693,7 @@ Students can learn:
 - Molecular representation
 - 2D visualization
 - 3D visualization
+- View molecular charts
 - Molecular descriptors
 - Structure-property relationships
 """)
